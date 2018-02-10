@@ -49,7 +49,6 @@ SpecialInstructions: "call 815 at the gate",
 PaymentType: "credit card",
 StoreId: 382
 }
-
 /*
 * Create a new variable named currentOrders
 * currentOrders should be single object containing both orders from above
@@ -108,6 +107,8 @@ order2:{
 * Run your file with node pizza.js
 * Console.log(currentOrders) to verify changes have been made
 */
-currentOrders.order1.Pizza.PizzaSauce.push("classic marinara")
-currentOrders.orders[0].order1.Pizza.PizzaSauce.pop("sausage")
+currentOrders.order1.Pizza.PizzaSauce="classic marinara";
+currentOrders.order1.Toppings.Meats.pop();
+currentOrders.order1.Toppings.Veggies.push("spinach")
+currentOrders.order1.orderTime="20"
 console.log(currentOrders);
